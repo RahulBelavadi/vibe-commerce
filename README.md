@@ -40,16 +40,24 @@ text
 
 ## How to Run the Project
 
-### Backend Setup
+## Backend Setup
 
 ```bash
 cd backend
 npm install
+Create a .env file inside the backend folder and add:
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+Start the backend server:
 npm start
-Frontend Setup
+```
+
+## Frontend Setup
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 ## API Endpoints
 
@@ -60,7 +68,6 @@ npm run dev
 | DELETE | `/api/cart/:id` | Remove item from cart |
 | GET | `/api/cart` | Get all cart items with total amount |
 | POST | `/api/checkout` | Generate mock receipt (total, timestamp) |
-
 
 ## Author
 
